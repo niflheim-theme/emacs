@@ -3,6 +3,8 @@ Niflheim theme for emacs
 
 A Niflheim theme for [Emacs](https://www.gnu.org/software/emacs/).
 
+![Screenshot](screenshot.png)
+
 ## Installation (with MELPA)
 
 
