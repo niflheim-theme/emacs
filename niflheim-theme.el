@@ -1,6 +1,25 @@
-;;; niflheim-theme.el --- Custom face theme for Emacs  -*-coding: utf-8 -*-
+;;; niflheim-theme.el --- A port of the Nifleim theme to Emacs
 
-;; Copyright (C) 2014 Benjamin Van Ryseghem & Nicolas Petton
+;; Copyright (C) 2014  Nicolas Petton
+
+;; Author: Nicolas Petton <petton.nicolas@gmail.com>, Benjamin Van Ryseghem <benjamin.vanryseghem@gmail.com>
+;; Keywords: themes
+;; URL: https://github.com/niflheim-theme/emacs
+;; Version: 0.1
+
+;; This file is NOT part of GNU Emacs
+
+;;; License:
+;;
+;; Niflheim (https://github.com/niflheim-theme) is licensed under a
+;; Creative Commons Attribution-ShareAlike 4.0 International License.
+
+
+;;; Commentary:
+;;
+;; A port the the Niflheim dark theme for Emacs
+;; (https://github.com/niflheim-theme)
+;;
 
 ;;; Code:
 
