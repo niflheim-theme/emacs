@@ -5,7 +5,7 @@
 ;;; Code:
 
 (deftheme niflheim
-  "")
+  "A dark medium contrast theme")
 
 (let ((class '((class color) (min-colors 89)))
 	  (background-color "#303030")
