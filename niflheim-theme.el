@@ -19,8 +19,7 @@
    `(cursor ((,class (:background ,cursor-background))))
    ;; Highlighting faces
    `(fringe ((,class (:background "#202020"))))
-   `(highlight ((,class (:background "#454545" :foreground "#ffffff"
-			 :underline t))))
+   `(highlight ((,class (:background "#454545" :foreground "#ffffff" :underline t))))
    `(region ((,class (:background "#666666" :foreground "#f6f3e8"))))
    `(secondary-selection ((,class (:background "#252525" :foreground "#f6f3e8"))))
    `(isearch ((,class (:background "#aaeeab" :foreground "#202020"))))
