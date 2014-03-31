@@ -61,6 +61,9 @@
    `(font-lock-variable-name-face ((,class (:foreground "#aaccff"))))
    `(font-lock-warning-face ((,class (:foreground "#ff6c6b"))))
 
+   ;; linum
+   `(linum ((,class (:background "#202020"))))
+
    ;; Button and link faces
    `(link ((,class (:foreground "#7ac1ff" :underline t))))
    `(link-visited ((,class (:foreground "#aaccff" :underline t))))
