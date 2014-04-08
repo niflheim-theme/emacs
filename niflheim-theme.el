@@ -27,11 +27,11 @@
   "A dark medium contrast theme")
 
 (let ((class '((class color) (min-colors 89)))
-	  (background-color "#303030")
-	  (orange "#ffcd8e")
-	  (purple "#cbaaf5")
-	  (default-color "#b8c4cf")
-	  (cursor-background "#b6c4cf"))
+          (background-color "#303030")
+          (orange "#ffcd8e")
+          (purple "#cbaaf5")
+          (default-color "#b8c4cf")
+          (cursor-background "#b6c4cf"))
   (custom-theme-set-faces
    'niflheim
    `(default ((,class (:background ,background-color :foreground ,default-color))))
@@ -108,7 +108,7 @@
    `(outline-7 ((,class (:foreground "#7db1cf"))))
    `(outline-8 ((,class (:foreground "#92a65e"))))
 
-;;   `(org-agenda-date ((,class (:foreground ,purple :background "#202020" :weight bold :box 1))))
+   ;; `(org-agenda-date ((,class (:foreground ,purple :background "#202020" :weight bold :box 1))))
    `(org-agenda-date ((,class (:foreground ,purple :weight bold))))
    `(org-agenda-structure ((,class (:foreground ,orange :weight bold))))
    `(org-scheduled-today ((,class (:foreground ,default-color :weight bold))))
@@ -123,7 +123,7 @@
    `(message-cited-text ((,class (:foreground "#99968b"))))
    `(message-separator ((,class (:foreground "#ff6c6b" :weight bold))))
 
-	;; flyspell
+   ;; flyspell
    `(flyspell-incorrect ((,class (:underline (:color "#ff6c6b" :style wave) :weight bold))))
    `(flyspell-duplicate ((,class (:underline (:color "#ff6c6b" :style wave) :weight bold))))
 
