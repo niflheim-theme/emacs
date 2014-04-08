@@ -150,7 +150,10 @@
    `(gnus-header-from ((,class (:weight bold :foreground "#95e454"))))
    `(gnus-header-subject ((,class (:foreground "#cae682"))))
    `(gnus-header-name ((,class (:foreground "#8ac6f2"))))
-   `(gnus-header-newsgroups ((,class (:foreground "#cae682"))))))
+   `(gnus-header-newsgroups ((,class (:foreground "#cae682")))))
+   
+   ;; which-function
+   `(which-func ((,class (:foreground ,purple))))))
 
 
 ;;;###autoload
