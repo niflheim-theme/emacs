@@ -153,7 +153,7 @@
    `(gnus-header-newsgroups ((,class (:foreground "#cae682")))))
    
    ;; which-function
-   `(which-func ((,class (:foreground ,purple))))))
+   `(which-func ((,class (:foreground ,purple)))))
 
 
 ;;;###autoload
