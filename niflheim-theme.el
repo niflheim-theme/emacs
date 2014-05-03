@@ -44,8 +44,8 @@
    `(isearch ((,class (:background "#aaeeab" :foreground "#202020"))))
    `(lazy-highlight ((,class (:background "#789771" :foreground "#444444"))))
    ;; Mode line faces
-   `(mode-line ((,class (:background "#202020" :foreground "#cccccc"))))
-   `(mode-line-inactive ((,class (:background "#444444" :foreground "#aaaaaa"))))
+   `(mode-line ((,class (:background "#202020" :foreground "#aaaaaa" :box 1))))
+   `(mode-line-inactive ((,class (:background "#444444" :foreground "#aaaaaa" :box 1))))
    ;; Escape and prompt faces
    `(minibuffer-prompt ((,class (:foreground ,orange :weight bold))))
    `(escape-glyph ((,class (:foreground ,orange :weight bold))))
