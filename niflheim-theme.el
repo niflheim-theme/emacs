@@ -124,6 +124,11 @@
    `(message-cited-text ((,class (:foreground "#99968b"))))
    `(message-separator ((,class (:foreground "#ff6c6b" :weight bold))))
 
+   ;; mu4e
+   `(mu4e-title-face ((,class (:foreground ,orange :weight bold))))
+   `(mu4e-highlight-face ((,class (:foreground ,purple :weight bold))))
+   `(mu4e-header-highlight-face ((,class (:foreground ,orange :background "#666666"))))
+
    ;; flyspell
    `(flyspell-incorrect ((,class (:underline (:color "#ff6c6b" :style wave) :weight bold))))
    `(flyspell-duplicate ((,class (:underline (:color "#ff6c6b" :style wave) :weight bold))))
