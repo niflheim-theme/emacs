@@ -43,12 +43,14 @@
           (purple "#cbaaf5")
           (blue "#7ac1ff")
           (blue-light "#aaccff")
+          (blue-dark "#456981")
+          (blue-darker "#3e4d58")
           (green "#789771")
           (green-2 "#70a56f")
           (green-3 "#92a65e")
           (green-4 "#83e1b2")
           (green-light "#aaeeab")
-          (green-dark "#335533")
+          (green-dark "#284437")
           (red "#ff6c6b")
           (red-light "#ff5b66")
           (red-dark "#553333")
@@ -58,6 +60,7 @@
    'niflheim
    `(default ((,class (:background ,background :foreground ,default))))
    `(cursor ((,class (:background ,cursor-background))))
+
    ;; Highlighting faces
    `(fringe ((,class (:background ,fringe))))
    `(highlight ((,class (:background ,highlight :foreground "white" :underline t))))
@@ -65,12 +68,15 @@
    `(secondary-selection ((,class (:background ,grey-dark :foreground ,light))))
    `(isearch ((,class (:background ,green-light :foreground ,fringe))))
    `(lazy-highlight ((,class (:background ,green :foreground ,highlight))))
+
    ;; Mode line faces
    `(mode-line ((,class (:background ,fringe :foreground ,grey-light :box 1))))
    `(mode-line-inactive ((,class (:background ,highlight :foreground ,grey-light :box 1))))
+
    ;; Escape and prompt faces
    `(minibuffer-prompt ((,class (:foreground ,orange :weight bold))))
    `(escape-glyph ((,class (:foreground ,orange :weight bold))))
+
    ;; Font lock faces
    `(font-lock-builtin-face ((,class (:foreground ,red :weight bold))))
    `(font-lock-comment-face ((,class (:foreground ,comment))))
@@ -112,7 +118,7 @@
    `(link ((,class (:foreground ,blue :underline t))))
    `(link-visited ((,class (:foreground ,blue-light :underline t))))
    `(button ((,class (:background ,grey-darker :foreground ,light))))
-   `(header-line ((,class (:background ,fringe :foreground ,light))))
+   `(header-line ((,class (:background ,fringe :foreground ,default :box 1))))
    ;; compilation
    `(compilation-info ((,class (:foreground ,purple :weight bold))))
    `(compilation-line-number ((,class (:foreground ,orange :weight bold))))
@@ -142,9 +148,11 @@
    `(diff-file-header ((,class (:background ,highlight :weight bold :foreground ,default))))
 
    ;; ediff
-   `(ediff-fine-diff-B ((,class (:background ,green-2 :foreground ,grey-dark))))
-   `(ediff-fine-diff-A ((,class (:background ,red :foreground ,grey-dark))))
-   `(ediff-current-diff-C ((,class (:background ,yellow-dark :foreground ,grey-dark))))
+   `(ediff-fine-diff-B ((,class (:background ,green-dark))))
+   `(ediff-current-diff-B ((,class (:background ,green-dark))))
+   `(ediff-fine-diff-A ((,class (:background ,red-dark :foreground))))
+   `(ediff-current-diff-C ((,class (:background ,blue-darker))))
+   `(ediff-fine-diff-C ((,class (:background ,blue-dark))))
 
    `(ediff-even-diff-A ((,class (:background ,highlight))))
    `(ediff-even-diff-B ((,class (:background ,highlight))))
@@ -177,6 +185,8 @@
    `(outline-7 ((,class (:foreground ,blue))))
    `(outline-8 ((,class (:foreground ,green-3))))
 
+   `(org-column-title ((,class (:foreground unspecified :background unspecified))))
+
    `(org-agenda-date ((,class (:foreground ,purple :weight bold))))
    `(org-agenda-structure ((,class (:foreground ,orange :weight bold))))
    `(org-scheduled-today ((,class (:foreground ,default :weight bold))))
@@ -193,8 +203,10 @@
 
    ;; mu4e
    `(mu4e-title-face ((,class (:foreground ,orange :weight bold))))
+   `(mu4e-unread-face ((,class (:foreground ,orange :weight bold))))
+   `(mu4e-replied-face ((,class (:foreground ,blue))))
    `(mu4e-highlight-face ((,class (:foreground ,purple :weight bold))))
-   `(mu4e-header-highlight-face ((,class (:foreground ,orange :background ,grey))))
+   `(mu4e-header-highlight-face ((,class (:foreground unspecified :background ,grey))))
 
    ;; flyspell
    `(flyspell-incorrect ((,class (:underline (:color ,red :style wave) :weight bold))))
