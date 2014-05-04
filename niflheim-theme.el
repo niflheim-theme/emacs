@@ -27,48 +27,92 @@
   "A dark medium contrast theme")
 
 (let ((class '((class color) (min-colors 89)))
-          (background-color "#303030")
+          (background "#303030")
+          (fringe "#202020")
+          (highlight "#454545")
+          (comment "#929283")
+          (light  "#f6f3e8")
+          (grey "#666666")
+          (grey-light "#aaaaaa")
+          (grey-darker "#333333")
+          (grey-dark "#252525")
           (orange "#ffcd8e")
+          (orange-2 "#f7af75")
+          (orange-dark "#da8548")
+          (yellow-dark "#888833")
           (purple "#cbaaf5")
-          (default-color "#b8c4cf")
+          (blue "#7ac1ff")
+          (blue-light "#aaccff")
+          (green "#789771")
+          (green-2 "#70a56f")
+          (green-3 "#92a65e")
+          (green-4 "#83e1b2")
+          (green-light "#aaeeab")
+          (green-dark "#335533")
+          (red "#ff6c6b")
+          (red-light "#ff5b66")
+          (red-dark "#553333")
+          (default "#b8c4cf")
           (cursor-background "#b6c4cf"))
   (custom-theme-set-faces
    'niflheim
-   `(default ((,class (:background ,background-color :foreground ,default-color))))
+   `(default ((,class (:background ,background :foreground ,default))))
    `(cursor ((,class (:background ,cursor-background))))
    ;; Highlighting faces
-   `(fringe ((,class (:background "#202020"))))
-   `(highlight ((,class (:background "#454545" :foreground "#ffffff" :underline t))))
-   `(region ((,class (:background "#666666" :foreground "#f6f3e8"))))
-   `(secondary-selection ((,class (:background "#252525" :foreground "#f6f3e8"))))
-   `(isearch ((,class (:background "#aaeeab" :foreground "#202020"))))
-   `(lazy-highlight ((,class (:background "#789771" :foreground "#444444"))))
+   `(fringe ((,class (:background ,fringe))))
+   `(highlight ((,class (:background ,highlight :foreground "white" :underline t))))
+   `(region ((,class (:background ,grey :foreground ,light))))
+   `(secondary-selection ((,class (:background ,grey-dark :foreground ,light))))
+   `(isearch ((,class (:background ,green-light :foreground ,fringe))))
+   `(lazy-highlight ((,class (:background ,green :foreground ,highlight))))
    ;; Mode line faces
-   `(mode-line ((,class (:background "#202020" :foreground "#aaaaaa" :box 1))))
-   `(mode-line-inactive ((,class (:background "#444444" :foreground "#aaaaaa" :box 1))))
+   `(mode-line ((,class (:background ,fringe :foreground ,grey-light :box 1))))
+   `(mode-line-inactive ((,class (:background ,highlight :foreground ,grey-light :box 1))))
    ;; Escape and prompt faces
    `(minibuffer-prompt ((,class (:foreground ,orange :weight bold))))
    `(escape-glyph ((,class (:foreground ,orange :weight bold))))
    ;; Font lock faces
-   `(font-lock-builtin-face ((,class (:foreground "#ff6c6b" :weight bold))))
-   `(font-lock-comment-face ((,class (:foreground "#929283"))))
-   `(font-lock-constant-face ((,class (:foreground "#da8548" :weight bold))))
+   `(font-lock-builtin-face ((,class (:foreground ,red :weight bold))))
+   `(font-lock-comment-face ((,class (:foreground ,comment))))
+   `(font-lock-constant-face ((,class (:foreground ,orange-dark :weight bold))))
    `(font-lock-function-name-face ((,class (:foreground ,purple))))
-   `(font-lock-keyword-face ((,class (:foreground "#f7af75" :weight bold))))
-   `(font-lock-string-face ((,class (:foreground "#789771"))))
-   `(font-lock-doc-face ((,class (:foreground "#70a56f"))))
-   `(font-lock-type-face ((,class (:foreground "#92a65e" :weight bold))))
-   `(font-lock-variable-name-face ((,class (:foreground "#aaccff"))))
-   `(font-lock-warning-face ((,class (:foreground "#ff6c6b"))))
+   `(font-lock-keyword-face ((,class (:foreground ,orange-2 :weight bold))))
+   `(font-lock-string-face ((,class (:foreground ,green))))
+   `(font-lock-doc-face ((,class (:foreground ,green-2))))
+   `(font-lock-type-face ((,class (:foreground ,green-3 :weight bold))))
+   `(font-lock-variable-name-face ((,class (:foreground ,blue-light))))
+   `(font-lock-warning-face ((,class (:foreground ,red))))
 
    ;; linum
-   `(linum ((,class (:background "#202020"))))
+   `(linum ((,class (:background ,fringe))))
+
+   ;; whitespace
+   `(whitespace-space ((,class (:background unspecified :foreground ,highlight
+                                            :inverse-video unspecified))))
+   `(whitespace-hspace ((,class (:background unspecified :foreground ,highlight
+                                            :inverse-video unspecified))))
+   `(whitespace-tab ((,class (:background unspecified :foreground ,highlight
+                                            :inverse-video unspecified))))
+   `(whitespace-newline ((,class (:background unspecified :foreground ,highlight
+                                             :inverse-video unspecified))))
+   `(whitespace-trailing ((,class (:background unspecified :foreground ,highlight
+                                             :inverse-video unspecified))))
+   `(whitespace-line ((,class (:background unspecified :foreground ,red
+                                               :inverse-video unspecified))))
+   `(whitespace-space-before-tab ((,class (:background unspecified :foreground ,highlight
+                                               :inverse-video t))))
+   `(whitespace-indentation ((,class (:background unspecified :foreground ,highlight
+                                            :inverse-video unspecified))))
+   `(whitespace-empty ((,class (:background unspecified :foreground ,highlight
+                                            :inverse-video unspecified))))
+   `(whitespace-space-after-tab ((,class (:background unspecified :foreground "#ff6c6b"
+                                                      :inverse-video t :weight bold))))
 
    ;; Button and link faces
-   `(link ((,class (:foreground "#7ac1ff" :underline t))))
-   `(link-visited ((,class (:foreground "#aaccff" :underline t))))
-   `(button ((,class (:background "#333333" :foreground "#f6f3e8"))))
-   `(header-line ((,class (:background "#202020" :foreground "#f6f3e8"))))
+   `(link ((,class (:foreground ,blue :underline t))))
+   `(link-visited ((,class (:foreground ,blue-light :underline t))))
+   `(button ((,class (:background ,grey-darker :foreground ,light))))
+   `(header-line ((,class (:background ,fringe :foreground ,light))))
    ;; compilation
    `(compilation-info ((,class (:foreground ,purple :weight bold))))
    `(compilation-line-number ((,class (:foreground ,orange :weight bold))))
@@ -78,60 +122,83 @@
    `(dired-directory ((,class (:foreground ,purple :weight bold))))
 
    ;; magit
-   `(magit-section-title ((,class (:foreground "#92a65e" :weight bold))))
+   `(magit-section-title ((,class (:foreground ,green-3 :weight bold))))
    `(magit-branch ((,class (:foreground ,orange :weight bold))))
    `(magit-log-sha1 ((,class (:foreground ,purple :weight bold))))
    `(magit-tag ((,class (:foreground ,purple :weight bold :box 1 :background "#202020"))))
-   `(magit-log-head-label-tags ((,class (:foreground ,purple :weight bold :box 1 :background "#202020"))))
-   `(magit-log-head-label-local ((,class (:foreground ,orange :weight bold :box 1 :background "#202020"))))
-   `(magit-log-head-label-remote ((,class (:foreground "#92a65e" :weight bold :box 1 :background "#202020"))))
-   `(magit-log-head-label-head ((,class (:foreground "#ff6c6b" :weight bold :box 1 :background "#202020"))))
+   `(magit-log-head-label-tags ((,class (:foreground ,purple :weight bold :box 1 :background ,fringe))))
+   `(magit-log-head-label-local ((,class (:foreground ,orange :weight bold :box 1 :background ,fringe))))
+   `(magit-log-head-label-remote ((,class (:foreground ,green-3 :weight bold :box 1 :background ,fringe))))
+   `(magit-log-head-label-head ((,class (:foreground ,red :weight bold :box 1 :background ,fringe))))
+   `(magit-diff-hunk-header ((,class (:background ,highlight :weight bold :foreground ,default))))
+   `(magit-diff-file-header ((,class (:background ,highlight :weight bold :foreground ,default))))
+   `(magit-whitespace-warning-face ((,class (:background ,red))))
+
+
+   ;; diff
+   `(diff-removed ((,class (:foreground ,default :background ,red-dark))))
+   `(diff-added ((,class (:foreground ,default :background ,green-dark))))
+   `(diff-hunk-header ((,class (:background ,highlight :weight bold :foreground ,default))))
+   `(diff-file-header ((,class (:background ,highlight :weight bold :foreground ,default))))
+
+   ;; ediff
+   `(ediff-fine-diff-B ((,class (:background ,green-2 :foreground ,grey-dark))))
+   `(ediff-fine-diff-A ((,class (:background ,red :foreground ,grey-dark))))
+   `(ediff-current-diff-C ((,class (:background ,yellow-dark :foreground ,grey-dark))))
+
+   `(ediff-even-diff-A ((,class (:background ,highlight))))
+   `(ediff-even-diff-B ((,class (:background ,highlight))))
+   `(ediff-even-diff-C ((,class (:background ,highlight))))
+   `(ediff-odd-diff-A ((,class (:background ,highlight))))
+   `(ediff-odd-diff-B ((,class (:background ,highlight))))
+   `(ediff-odd-diff-C ((,class (:background ,highlight))))
 
    ;; ido faces
    `(ido-first-match ((,class (:foreground ,purple :weight bold))))
    `(ido-only-match ((,class (:foreground ,purple :weight bold))))
-   `(ido-subdir ((,class (:foreground "#f7af75"))))
+   `(ido-subdir ((,class (:foreground ,orange-2))))
 
    ;; js2-mode
-   `(js2-function-param ((,class (:foreground "#7db1cf" :weight bold))))
+   `(js2-function-param ((,class (:foreground ,blue :weight bold))))
 
    ;; org-mode todo WORK IN PROGRESS
-   `(org-hide ((,class (:foreground ,background-color))))
-   `(org-todo ((,class (:foreground "#ff5b66" :weight bold))))
-   `(org-done ((,class (:foreground "#7ac1ff" :weight bold))))
-   `(org-headline-done ((,class (:foreground ,default-color))))
+   `(org-hide ((,class (:foreground ,background))))
+   `(org-todo ((,class (:foreground ,red-light :weight bold))))
+   `(org-done ((,class (:foreground ,blue :weight bold))))
+   `(org-scheduled-previously ((,class (:foreground ,red))))
+   `(org-scheduled ((,class (:foreground ,orange))))
+   `(org-headline-done ((,class (:foreground ,default))))
    `(outline-1 ((,class (:foreground ,orange))))
    `(outline-2 ((,class (:foreground ,purple))))
-   `(outline-3 ((,class (:foreground "#7db1cf"))))
-   `(outline-4 ((,class (:foreground "#92a65e"))))
+   `(outline-3 ((,class (:foreground ,blue))))
+   `(outline-4 ((,class (:foreground ,green-3))))
    `(outline-5 ((,class (:foreground ,orange))))
    `(outline-6 ((,class (:foreground ,purple))))
-   `(outline-7 ((,class (:foreground "#7db1cf"))))
-   `(outline-8 ((,class (:foreground "#92a65e"))))
+   `(outline-7 ((,class (:foreground ,blue))))
+   `(outline-8 ((,class (:foreground ,green-3))))
 
-   ;; `(org-agenda-date ((,class (:foreground ,purple :background "#202020" :weight bold :box 1))))
    `(org-agenda-date ((,class (:foreground ,purple :weight bold))))
    `(org-agenda-structure ((,class (:foreground ,orange :weight bold))))
-   `(org-scheduled-today ((,class (:foreground ,default-color :weight bold))))
-   `(org-agenda-done ((,class (:foreground "#929283"))))
+   `(org-scheduled-today ((,class (:foreground ,default :weight bold))))
+   `(org-agenda-done ((,class (:foreground ,comment))))
 
    ;; Message faces
    `(message-header-name ((,class (:foreground ,orange :weight bold))))
    `(message-header-cc ((,class (:foreground ,purple))))
    `(message-header-other ((,class (:foreground ,purple))))
-   `(message-header-subject ((,class (:foreground "#83e1b2"))))
+   `(message-header-subject ((,class (:foreground ,green-4))))
    `(message-header-to ((,class (:foreground ,purple))))
-   `(message-cited-text ((,class (:foreground "#99968b"))))
-   `(message-separator ((,class (:foreground "#ff6c6b" :weight bold))))
+   `(message-cited-text ((,class (:foreground ,comment))))
+   `(message-separator ((,class (:foreground ,red :weight bold))))
 
    ;; mu4e
    `(mu4e-title-face ((,class (:foreground ,orange :weight bold))))
    `(mu4e-highlight-face ((,class (:foreground ,purple :weight bold))))
-   `(mu4e-header-highlight-face ((,class (:foreground ,orange :background "#666666"))))
+   `(mu4e-header-highlight-face ((,class (:foreground ,orange :background ,grey))))
 
    ;; flyspell
-   `(flyspell-incorrect ((,class (:underline (:color "#ff6c6b" :style wave) :weight bold))))
-   `(flyspell-duplicate ((,class (:underline (:color "#ff6c6b" :style wave) :weight bold))))
+   `(flyspell-incorrect ((,class (:underline (:color ,red :style wave) :weight bold))))
+   `(flyspell-duplicate ((,class (:underline (:color ,red :style wave) :weight bold))))
 
    ;; Gnus faces -- from wombat, feel free to improve :)
    `(gnus-group-news-1 ((,class (:weight bold :foreground "#95e454"))))
