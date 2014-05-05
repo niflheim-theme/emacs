@@ -71,7 +71,7 @@
 
    ;; Mode line faces
    `(mode-line ((,class (:background ,fringe :foreground ,grey-light :box 1))))
-   `(mode-line-inactive ((,class (:background ,highlight :foreground ,grey-light :box 1))))
+   `(mode-line-inactive ((,class (:background ,background :foreground ,grey :box 1))))
 
    ;; Escape and prompt faces
    `(minibuffer-prompt ((,class (:foreground ,orange :weight bold))))
