@@ -239,6 +239,9 @@
    `(gnus-header-newsgroups ((,class (:foreground "#cae682"))))
 
   ;; company
+  `(company-preview ((,class (:background ,highlight))))
+  `(company-preview-common ((,class (:background ,highlight :foreground ,purple))))
+  `(company-preview-search ((,class (:background ,blue-alt :foreground ,default))))
   `(company-tooltip ((,class (:background ,highlight))))
   `(company-scrollbar-bg ((,class (:background ,highlight))))
   `(company-scrollbar-fg ((,class (:background ,grey))))
