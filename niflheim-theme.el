@@ -27,35 +27,36 @@
   "A dark medium contrast theme")
 
 (let ((class '((class color) (min-colors 89)))
-          (background "#303030")
-          (fringe "#202020")
-          (highlight "#454545")
-          (comment "#929283")
-          (light  "#f6f3e8")
-          (grey "#666666")
-          (grey-light "#aaaaaa")
-          (grey-darker "#333333")
-          (grey-dark "#252525")
-          (orange "#ffcd8e")
-          (orange-2 "#f7af75")
-          (orange-dark "#da8548")
-          (yellow-dark "#888833")
-          (purple "#cbaaf5")
-          (blue "#7ac1ff")
-          (blue-light "#aaccff")
-          (blue-dark "#456981")
-          (blue-darker "#3e4d58")
-          (green "#789771")
-          (green-2 "#70a56f")
-          (green-3 "#92a65e")
-          (green-4 "#83e1b2")
-          (green-light "#aaeeab")
-          (green-dark "#284437")
-          (red "#ff6c6b")
-          (red-light "#ff5b66")
-          (red-dark "#553333")
-          (default "#b8c4cf")
-          (cursor-background "#b6c4cf"))
+      (background "#303030")
+      (fringe "#202020")
+      (highlight "#454545")
+      (comment "#929283")
+      (light  "#f6f3e8")
+      (grey "#666666")
+      (grey-light "#aaaaaa")
+      (grey-darker "#333333")
+      (grey-dark "#252525")
+      (orange "#ffcd8e")
+      (orange-2 "#f7af75")
+      (orange-dark "#da8548")
+      (yellow-dark "#888833")
+      (purple "#cbaaf5")
+      (blue "#7ac1ff")
+      (blue-alt "#1268b4")
+      (blue-light "#aaccff")
+      (blue-dark "#456981")
+      (blue-darker "#3e4d58")
+      (green "#789771")
+      (green-2 "#70a56f")
+      (green-3 "#92a65e")
+      (green-4 "#83e1b2")
+      (green-light "#aaeeab")
+      (green-dark "#284437")
+      (red "#ff6c6b")
+      (red-light "#ff5b66")
+      (red-dark "#553333")
+      (default "#b8c4cf")
+      (cursor-background "#b6c4cf"))
   (custom-theme-set-faces
    'niflheim
    `(default ((,class (:background ,background :foreground ,default))))
@@ -96,19 +97,19 @@
    `(whitespace-space ((,class (:background unspecified :foreground ,highlight
                                             :inverse-video unspecified))))
    `(whitespace-hspace ((,class (:background unspecified :foreground ,highlight
-                                            :inverse-video unspecified))))
+                                             :inverse-video unspecified))))
    `(whitespace-tab ((,class (:background unspecified :foreground ,highlight
-                                            :inverse-video unspecified))))
+                                          :inverse-video unspecified))))
    `(whitespace-newline ((,class (:background unspecified :foreground ,highlight
-                                             :inverse-video unspecified))))
+                                              :inverse-video unspecified))))
    `(whitespace-trailing ((,class (:background unspecified :foreground ,highlight
-                                             :inverse-video unspecified))))
-   `(whitespace-line ((,class (:background unspecified :foreground ,red
                                                :inverse-video unspecified))))
+   `(whitespace-line ((,class (:background unspecified :foreground ,red
+                                           :inverse-video unspecified))))
    `(whitespace-space-before-tab ((,class (:background unspecified :foreground ,highlight
-                                               :inverse-video t))))
+                                                       :inverse-video t))))
    `(whitespace-indentation ((,class (:background unspecified :foreground ,highlight
-                                            :inverse-video unspecified))))
+                                                  :inverse-video unspecified))))
    `(whitespace-empty ((,class (:background unspecified :foreground ,highlight
                                             :inverse-video unspecified))))
    `(whitespace-space-after-tab ((,class (:background unspecified :foreground "#ff6c6b"
@@ -235,11 +236,20 @@
    `(gnus-header-from ((,class (:weight bold :foreground "#95e454"))))
    `(gnus-header-subject ((,class (:foreground "#cae682"))))
    `(gnus-header-name ((,class (:foreground "#8ac6f2"))))
-   `(gnus-header-newsgroups ((,class (:foreground "#cae682")))))
-   
-   ;; which-function
-   `(which-func ((,class (:foreground ,purple)))))
+   `(gnus-header-newsgroups ((,class (:foreground "#cae682"))))
 
+  ;; company
+  `(company-tooltip ((,class (:background ,highlight))))
+  `(company-scrollbar-bg ((,class (:background ,highlight))))
+  `(company-scrollbar-fg ((,class (:background ,grey))))
+  `(company-tooltip-common ((,class (:foreground ,purple :weight bold :background ,highlight))))
+  `(company-tooltip-annotation ((,class (:foreground ,orange :background unspecified))))
+  `(company-tooltip-common-selection ((,class (:foreground ,purple :background ,blue-alt :weight bold))))
+  `(company-tooltip-selection ((,class (:foreground ,default :background ,blue-alt))))
+  `(company-tooltip-mouse ((,class (:foreground ,default :background ,blue-alt))))
+  
+  ;; which-function
+  `(which-func ((,class (:foreground ,purple))))))
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
