@@ -239,7 +239,7 @@
    `(gnus-header-newsgroups ((,class (:foreground "#cae682"))))
 
   ;; company
-  `(company-preview ((,class (:background ,highlight))))
+  `(company-preview ((,class (:background ,highlight :foreground ,default))))
   `(company-preview-common ((,class (:background ,highlight :foreground ,purple))))
   `(company-preview-search ((,class (:background ,blue-alt :foreground ,default))))
   `(company-tooltip ((,class (:background ,highlight))))
