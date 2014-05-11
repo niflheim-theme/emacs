@@ -210,8 +210,8 @@
    `(mu4e-header-highlight-face ((,class (:foreground unspecified :background ,grey))))
 
    ;; flyspell
-   `(flyspell-incorrect ((,class (:underline (:color ,red :style wave) :weight bold))))
-   `(flyspell-duplicate ((,class (:underline (:color ,red :style wave) :weight bold))))
+   `(flyspell-incorrect ((,class (:underline (:color ,red :style wave) :foreground unspecified))))
+   `(flyspell-duplicate ((,class (:underline (:color ,red :style wave) :foreground unspecified))))
 
    ;; Gnus faces -- from wombat, feel free to improve :)
    `(gnus-group-news-1 ((,class (:weight bold :foreground "#95e454"))))
