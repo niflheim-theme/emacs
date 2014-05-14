@@ -242,7 +242,7 @@
   `(company-preview ((,class (:background ,highlight :foreground ,default))))
   `(company-preview-common ((,class (:background ,highlight :foreground ,purple))))
   `(company-preview-search ((,class (:background ,blue-alt :foreground ,default))))
-  `(company-tooltip ((,class (:background ,highlight))))
+  `(company-tooltip ((,class (:background ,highlight :foreground ,default))))
   `(company-scrollbar-bg ((,class (:background ,highlight))))
   `(company-scrollbar-fg ((,class (:background ,grey))))
   `(company-tooltip-common ((,class (:foreground ,purple :weight bold :background ,highlight))))
