@@ -38,6 +38,7 @@
       (grey-darker "#333333")
       (grey-dark "#252525")
       (orange "#ffcd8e")
+      (orange-light "#ffedd5")
       (orange-2 "#f7af75")
       (orange-dark "#da8548")
       (orange-darker "#bd6626")
@@ -81,7 +82,7 @@
 
    ;; powerline
    (when (featurep 'powerline)
-      `(mode-line ((,class (:background ,purple-darker :foreground ,purple-light)))))
+      `(mode-line ((,class (:background ,orange-dark :foreground ,orange-light)))))
    (when (featurep 'powerline)
      `(mode-line-highlight ((,class (:foreground unspecified :background unspecified :box (:line-width -1 :style released-button))))))
    (when (featurep 'powerline)
