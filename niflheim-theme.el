@@ -84,13 +84,15 @@
    (when (featurep 'powerline)
       `(mode-line ((,class (:background ,orange-dark :foreground ,orange-light)))))
    (when (featurep 'powerline)
-     `(mode-line-highlight ((,class (:foreground unspecified :background unspecified :box (:line-width -1 :style released-button))))))
+     `(mode-line-highlight ((,class (:foreground unspecified :background unspecified :weight bold)))))
    (when (featurep 'powerline)
      `(mode-line-inactive ((,class (:background ,highlight , :foreground ,grey)))))
    (when (featurep 'powerline)
      `(powerline-active1 ((,class (:inherit mode-line :background ,grey :foreground ,light)))))
    (when (featurep 'powerline)
      `(powerline-active2 ((,class (:inherit mode-line :background ,grey-dark :foreground ,light)))))
+   (when (featurep 'powerline)
+     `(powerline-inactive2 ((,class (:inherit mode-line :background ,grey :foreground ,grey-light)))))
 
    ;; Escape and prompt faces
    `(minibuffer-prompt ((,class (:foreground ,orange :weight bold))))
