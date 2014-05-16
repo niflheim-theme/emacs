@@ -82,7 +82,7 @@
 
    ;; powerline
    (when (featurep 'powerline)
-      `(mode-line ((,class (:background ,orange-dark :foreground ,orange-light)))))
+      `(mode-line ((,class (:background ,green-3 :foreground ,light)))))
    (when (featurep 'powerline)
      `(mode-line-highlight ((,class (:foreground unspecified :background unspecified :weight bold)))))
    (when (featurep 'powerline)
