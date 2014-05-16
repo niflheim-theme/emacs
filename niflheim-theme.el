@@ -87,9 +87,9 @@
    (when (featurep 'powerline)
      `(mode-line-inactive ((,class (:background ,highlight , :foreground ,grey)))))
    (when (featurep 'powerline)
-     `(powerline-active1 ((,class (:inherit mode-line :background ,grey :foreground "white")))))
+     `(powerline-active1 ((,class (:inherit mode-line :background ,grey :foreground ,light)))))
    (when (featurep 'powerline)
-     `(powerline-active2 ((,class (:inherit mode-line :background ,grey-dark :foreground "white")))))
+     `(powerline-active2 ((,class (:inherit mode-line :background ,grey-dark :foreground ,light)))))
 
    ;; Escape and prompt faces
    `(minibuffer-prompt ((,class (:foreground ,orange :weight bold))))
