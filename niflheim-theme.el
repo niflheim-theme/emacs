@@ -32,6 +32,7 @@
       (highlight "#454545")
       (comment "#929283")
       (light  "#f6f3e8")
+      (veryligh "fbfaf5")
       (grey "#666666")
       (grey-light "#aaaaaa")
       (grey-darker "#333333")
@@ -39,8 +40,12 @@
       (orange "#ffcd8e")
       (orange-2 "#f7af75")
       (orange-dark "#da8548")
+      (orange-darker "#bd6626")
       (yellow-dark "#888833")
       (purple "#cbaaf5")
+      (purple-light "#ddcaf6")
+      (purple-dark "#7846b5")
+      (purple-darker "#5a2996")
       (blue "#7ac1ff")
       (blue-alt "#1268b4")
       (blue-light "#aaccff")
@@ -73,6 +78,18 @@
    ;; Mode line faces
    `(mode-line ((,class (:background ,fringe :foreground ,grey-light :box 1))))
    `(mode-line-inactive ((,class (:background ,background :foreground ,grey :box 1))))
+
+   ;; powerline
+   (when (featurep 'powerline)
+      `(mode-line ((,class (:background ,purple-darker :foreground ,purple-light)))))
+   (when (featurep 'powerline)
+     `(mode-line-highlight ((,class (:foreground unspecified :background unspecified :box (:line-width -1 :style released-button))))))
+   (when (featurep 'powerline)
+     `(mode-line-inactive ((,class (:background ,highlight , :foreground ,grey)))))
+   (when (featurep 'powerline)
+     `(powerline-active1 ((,class (:inherit mode-line :background ,grey :foreground "white")))))
+   (when (featurep 'powerline)
+     `(powerline-active2 ((,class (:inherit mode-line :background ,grey-dark :foreground "white")))))
 
    ;; Escape and prompt faces
    `(minibuffer-prompt ((,class (:foreground ,orange :weight bold))))
@@ -238,21 +255,21 @@
    `(gnus-header-name ((,class (:foreground "#8ac6f2"))))
    `(gnus-header-newsgroups ((,class (:foreground "#cae682"))))
 
-  ;; company
-  `(company-preview ((,class (:background ,highlight :foreground ,default))))
-  `(company-preview-common ((,class (:background ,highlight :foreground ,purple))))
-  `(company-preview-search ((,class (:background ,blue-alt :foreground ,default))))
-  `(company-tooltip ((,class (:background ,highlight :foreground ,default))))
-  `(company-scrollbar-bg ((,class (:background ,highlight))))
-  `(company-scrollbar-fg ((,class (:background ,grey))))
-  `(company-tooltip-common ((,class (:foreground ,purple :weight bold :background ,highlight))))
-  `(company-tooltip-annotation ((,class (:foreground ,orange :background unspecified))))
-  `(company-tooltip-common-selection ((,class (:foreground ,purple :background ,blue-alt :weight bold))))
-  `(company-tooltip-selection ((,class (:foreground ,default :background ,blue-alt))))
-  `(company-tooltip-mouse ((,class (:foreground ,default :background ,blue-alt))))
-  
-  ;; which-function
-  `(which-func ((,class (:foreground ,purple))))))
+   ;; company
+   `(company-preview ((,class (:background ,highlight :foreground ,default))))
+   `(company-preview-common ((,class (:background ,highlight :foreground ,purple))))
+   `(company-preview-search ((,class (:background ,blue-alt :foreground ,default))))
+   `(company-tooltip ((,class (:background ,highlight :foreground ,default))))
+   `(company-scrollbar-bg ((,class (:background ,highlight))))
+   `(company-scrollbar-fg ((,class (:background ,grey))))
+   `(company-tooltip-common ((,class (:foreground ,purple :weight bold :background ,highlight))))
+   `(company-tooltip-annotation ((,class (:foreground ,orange :background unspecified))))
+   `(company-tooltip-common-selection ((,class (:foreground ,purple :background ,blue-alt :weight bold))))
+   `(company-tooltip-selection ((,class (:foreground ,default :background ,blue-alt))))
+   `(company-tooltip-mouse ((,class (:foreground ,default :background ,blue-alt))))
+   
+   ;; which-function
+   `(which-func ((,class (:foreground ,purple))))))
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
