@@ -244,6 +244,10 @@
    `(gnus-header-name ((,class (:foreground "#8ac6f2"))))
    `(gnus-header-newsgroups ((,class (:foreground "#cae682"))))
 
+   ;; slime
+   `(slime-repl-inputed-output-face ((,class (:foreground ,purple))))
+   `(slime-inspector-value-face ((,class (:foreground ,orange :weight bold))))
+
    ;; company
    `(company-preview ((,class (:background ,highlight :foreground ,default))))
    `(company-preview-common ((,class (:background ,highlight :foreground ,purple))))
