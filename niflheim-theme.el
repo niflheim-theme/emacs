@@ -77,7 +77,7 @@
    `(lazy-highlight ((,class (:background ,green :foreground ,highlight))))
 
    ;; Mode line faces
-   `(mode-line ((,class (:background ,fringe :foreground ,grey-light :box 1))))
+   `(mode-line ((,class (:background ,fringe :foreground ,light :box 1))))
    `(mode-line-inactive ((,class (:background ,background :foreground ,grey :box 1))))
 
    ;; Escape and prompt faces
