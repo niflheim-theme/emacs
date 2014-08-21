@@ -28,7 +28,8 @@
 
 (let ((class '((class color) (min-colors 89)))
       (background "#303030")
-      (fringe "#202020")
+      (dark "#202020")
+      (fringe "#353535")
       (highlight "#454545")
       (comment "#929283")
       (light  "#f6f3e8")
@@ -69,15 +70,15 @@
    `(cursor ((,class (:background ,cursor-background))))
 
    ;; Highlighting faces
-   `(fringe ((,class (:background ,fringe))))
+   `(fringe ((,class (:background "#353535"))))
    `(highlight ((,class (:background ,highlight :foreground "white" :underline t))))
    `(region ((,class (:background ,grey :foreground ,light))))
    `(secondary-selection ((,class (:background ,grey-dark :foreground ,light))))
-   `(isearch ((,class (:background ,green-light :foreground ,fringe))))
+   `(isearch ((,class (:background ,green-light :foreground ,dark))))
    `(lazy-highlight ((,class (:background ,green :foreground ,highlight))))
 
    ;; Mode line faces
-   `(mode-line ((,class (:background ,fringe :foreground ,light :box 1))))
+   `(mode-line ((,class (:background ,orange-darker :foreground ,light :box 1))))
    `(mode-line-inactive ((,class (:background ,background :foreground ,grey :box 1))))
 
    ;; Escape and prompt faces
@@ -97,7 +98,7 @@
    `(font-lock-warning-face ((,class (:foreground ,red))))
 
    ;; linum
-   `(linum ((,class (:background ,fringe))))
+   `(linum ((,class (:foreground ,grey :background ,background))))
 
    ;; whitespace
    `(whitespace-space ((,class (:background unspecified :foreground ,highlight
@@ -125,7 +126,7 @@
    `(link ((,class (:foreground ,blue :underline t))))
    `(link-visited ((,class (:foreground ,blue-light :underline t))))
    `(button ((,class (:background ,grey-darker :foreground ,light))))
-   `(header-line ((,class (:background ,fringe :foreground ,default :box 1))))
+   `(header-line ((,class (:background ,dark :foreground ,default :box 1))))
    ;; compilation
    `(compilation-info ((,class (:foreground ,purple :weight bold))))
    `(compilation-line-number ((,class (:foreground ,orange :weight bold))))
@@ -139,10 +140,10 @@
    `(magit-branch ((,class (:foreground ,orange :weight bold))))
    `(magit-log-sha1 ((,class (:foreground ,purple :weight bold))))
    `(magit-tag ((,class (:foreground ,purple :weight bold :box 1 :background "#202020"))))
-   `(magit-log-head-label-tags ((,class (:foreground ,purple :weight bold :box 1 :background ,fringe))))
-   `(magit-log-head-label-local ((,class (:foreground ,orange :weight bold :box 1 :background ,fringe))))
-   `(magit-log-head-label-remote ((,class (:foreground ,green-3 :weight bold :box 1 :background ,fringe))))
-   `(magit-log-head-label-head ((,class (:foreground ,red :weight bold :box 1 :background ,fringe))))
+   `(magit-log-head-label-tags ((,class (:foreground ,purple :weight bold :box 1 :background ,dark))))
+   `(magit-log-head-label-local ((,class (:foreground ,orange :weight bold :box 1 :background ,dark))))
+   `(magit-log-head-label-remote ((,class (:foreground ,green-3 :weight bold :box 1 :background ,dark))))
+   `(magit-log-head-label-head ((,class (:foreground ,red :weight bold :box 1 :background ,dark))))
    `(magit-diff-hunk-header ((,class (:background ,highlight :weight bold :foreground ,default))))
    `(magit-diff-file-header ((,class (:background ,highlight :weight bold :foreground ,default))))
    `(magit-whitespace-warning-face ((,class (:background ,red))))
