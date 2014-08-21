@@ -76,6 +76,7 @@
    `(secondary-selection ((,class (:background ,grey-dark :foreground ,light))))
    `(isearch ((,class (:background ,green-light :foreground ,dark))))
    `(lazy-highlight ((,class (:background ,green :foreground ,highlight))))
+   `(hl-line ((,class (:background ,highlight :foreground nil))))
 
    ;; Mode line faces
    `(mode-line ((,class (:background ,orange-darker :foreground ,light :box 1))))
