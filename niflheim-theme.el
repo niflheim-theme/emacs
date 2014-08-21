@@ -43,6 +43,7 @@
       (orange-2 "#f7af75")
       (orange-dark "#da8548")
       (orange-darker "#bd6626")
+      (orange-mode-line "#a74b07")
       (yellow-dark "#888833")
       (purple "#cbaaf5")
       (purple-light "#ddcaf6")
@@ -79,7 +80,7 @@
    `(hl-line ((,class (:background ,highlight :foreground nil))))
 
    ;; Mode line faces
-   `(mode-line ((,class (:background ,orange-darker :foreground ,light :box 1))))
+   `(mode-line ((,class (:background ,orange-mode-line :foreground ,light :box 1))))
    `(mode-line-inactive ((,class (:background ,background :foreground ,grey :box 1))))
 
    ;; Escape and prompt faces
