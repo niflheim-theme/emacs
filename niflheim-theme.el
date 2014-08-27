@@ -164,12 +164,12 @@
    `(ediff-current-diff-C ((,class (:background ,blue-darker))))
    `(ediff-fine-diff-C ((,class (:background ,blue-dark))))
 
-   `(ediff-even-diff-A ((,class (:background ,highlight))))
-   `(ediff-even-diff-B ((,class (:background ,highlight))))
-   `(ediff-even-diff-C ((,class (:background ,highlight))))
-   `(ediff-odd-diff-A ((,class (:background ,highlight))))
-   `(ediff-odd-diff-B ((,class (:background ,highlight))))
-   `(ediff-odd-diff-C ((,class (:background ,highlight))))
+   `(ediff-even-diff-A ((,class (:background ,highlight :foreground unspecified))))
+   `(ediff-even-diff-B ((,class (:background ,highlight :foreground unspecified))))
+   `(ediff-even-diff-C ((,class (:background ,highlight :foreground unspecified))))
+   `(ediff-odd-diff-A ((,class (:background ,highlight :foreground unspecified))))
+   `(ediff-odd-diff-B ((,class (:background ,highlight :foreground unspecified))))
+   `(ediff-odd-diff-C ((,class (:background ,highlight :foreground unspecified))))
 
    ;; ido faces
    `(ido-first-match ((,class (:foreground ,purple :weight bold))))
