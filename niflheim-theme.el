@@ -219,8 +219,8 @@
    `(mu4e-header-highlight-face ((,class (:foreground unspecified :background ,grey))))
 
    ;; flyspell
-   `(flyspell-incorrect ((,class (:underline (:color ,red :style wave) :foreground unspecified))))
-   `(flyspell-duplicate ((,class (:underline (:color ,red :style wave) :foreground unspecified))))
+   `(flyspell-incorrect ((,class (:underline (:color ,red :style wave) :foreground unspecified :inherit nil))))
+   `(flyspell-duplicate ((,class (:underline (:color ,red :style wave) :foreground unspecified :inherit nil))))
 
    ;; Gnus faces -- from wombat, feel free to improve :)
    `(gnus-group-news-1 ((,class (:weight bold :foreground "#95e454"))))
@@ -263,7 +263,7 @@
    `(company-tooltip-common-selection ((,class (:foreground ,purple :background ,blue-alt :weight bold))))
    `(company-tooltip-selection ((,class (:foreground ,default :background ,blue-alt))))
    `(company-tooltip-mouse ((,class (:foreground ,default :background ,blue-alt))))
-   
+
    ;; which-function
    `(which-func ((,class (:foreground ,purple))))))
 
