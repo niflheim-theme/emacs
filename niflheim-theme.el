@@ -102,6 +102,12 @@
    ;; linum
    `(linum ((,class (:foreground ,grey :background ,background))))
 
+   ;; eshell
+   `(eshell-prompt ((,class (:foreground ,orange :background ,background :weight bold))))
+   `(eshell-ls-directory ((,class (:foreground ,purple :background ,background :weight bold))))
+   `(eshell-ls-symlink ((,class (:foreground ,orange :background ,background :weight normal))))
+   `(eshell-ls-executable ((,class (:foreground ,green-2 :background ,background :weight bold))))
+
    ;; whitespace
    `(whitespace-space ((,class (:background unspecified :foreground ,highlight
                                             :inverse-video unspecified))))
@@ -219,8 +225,8 @@
    `(mu4e-header-highlight-face ((,class (:foreground unspecified :background ,grey))))
 
    ;; flyspell
-   `(flyspell-incorrect ((,class (:underline (:color ,red :style wave) :weight undefined :foreground unspecified :inherit nil))))
-   `(flyspell-duplicate ((,class (:underline (:color ,red :style wave) :weight undefined :foreground unspecified :inherit nil))))
+   `(flyspell-incorrect ((,class (:underline (:color ,red :style wave) :weight unspecified :foreground unspecified :inherit nil))))
+   `(flyspell-duplicate ((,class (:underline (:color ,red :style wave) :weight unspecified :foreground unspecified :inherit nil))))
 
    ;; Gnus faces -- from wombat, feel free to improve :)
    `(gnus-group-news-1 ((,class (:weight bold :foreground "#95e454"))))
