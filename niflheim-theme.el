@@ -43,7 +43,7 @@
       (orange-2 "#f7af75")
       (orange-dark "#da8548")
       (orange-darker "#bd6626")
-      (orange-mode-line "#a74b07")
+      (mode-line "#141414")
       (yellow-dark "#888833")
       (purple "#cbaaf5")
       (purple-light "#ddcaf6")
@@ -80,8 +80,8 @@
    `(hl-line ((,class (:background ,grey-dark :underline nil :inherit nil))))
 
    ;; Mode line faces
-   `(mode-line ((,class (:background ,dark :foreground ,light :box 1))))
-   `(mode-line-inactive ((,class (:background ,highlight :foreground ,grey-light :box 1))))
+   `(mode-line ((,class (:background ,mode-line :foreground ,light :box (:line-width 3 :color ,mode-line)))))
+   `(mode-line-inactive ((,class (:background ,highlight :foreground ,grey-light :box (:line-width 3 :color ,highlight)))))
 
    ;; Escape and prompt faces
    `(minibuffer-prompt ((,class (:foreground ,orange :weight bold))))
