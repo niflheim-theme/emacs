@@ -80,8 +80,8 @@
    `(hl-line ((,class (:background ,grey-dark :underline nil :inherit nil))))
 
    ;; Mode line faces
-   `(mode-line ((,class (:background ,orange-mode-line :foreground ,light :box 1))))
-   `(mode-line-inactive ((,class (:background ,background :foreground ,grey :box 1))))
+   `(mode-line ((,class (:background ,dark :foreground ,light :box 1))))
+   `(mode-line-inactive ((,class (:background ,highlight :foreground ,grey-light :box 1))))
 
    ;; Escape and prompt faces
    `(minibuffer-prompt ((,class (:foreground ,orange :weight bold))))
