@@ -43,7 +43,7 @@
       (orange-2 "#f7af75")
       (orange-dark "#da8548")
       (orange-darker "#bd6626")
-      (mode-line "#141414")
+      (mode-line "#202020")
       (yellow-dark "#888833")
       (purple "#cbaaf5")
       (purple-light "#ddcaf6")
