@@ -63,7 +63,7 @@
       (green-alt "#198754")
       (red "#ff6c6b")
       (red-light "#ff5b66")
-      (red-alt "#ba3d3d")
+      (red-alt "#981b1b")
       (red-dark "#553333")
       (default "#b8c4cf")
       (cursor-background "#b6c4cf"))
@@ -166,11 +166,11 @@
    `(diff-file-header ((,class (:background ,highlight :weight bold :foreground ,default))))
 
    ;; ediff
-   `(ediff-fine-diff-B ((,class (:background ,green-alt))))
+   `(ediff-fine-diff-B ((,class (:foreground "#cccccc" :background ,green-alt))))
    `(ediff-current-diff-B ((,class (:background ,green-dark))))
-   `(ediff-fine-diff-A ((,class (:background ,red-alt :foreground))))
+   `(ediff-fine-diff-A ((,class (:background ,red-alt :foreground "#cccccc"))))
    `(ediff-current-diff-C ((,class (:background ,blue-darker))))
-   `(ediff-fine-diff-C ((,class (:background ,blue-dark))))
+   `(ediff-fine-diff-C ((,class (:foreground "#cccccc" :background ,blue-dark))))
 
    `(ediff-even-diff-A ((,class (:background ,highlight :foreground unspecified))))
    `(ediff-even-diff-B ((,class (:background ,highlight :foreground unspecified))))
