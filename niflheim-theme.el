@@ -272,6 +272,9 @@
    `(company-tooltip-selection ((,class (:foreground ,default :background ,blue-alt))))
    `(company-tooltip-mouse ((,class (:foreground ,default :background ,blue-alt))))
 
+   ;; web-mode
+   `(web-mode-html-tag-face ((,class (:foreground ,purple :weight bold))))
+
    ;; which-function
    `(which-func ((,class (:foreground ,purple))))))
 
