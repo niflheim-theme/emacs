@@ -157,6 +157,7 @@
    `(magit-diff-hunk-header ((,class (:background ,highlight :weight bold :foreground ,default))))
    `(magit-diff-file-header ((,class (:background ,highlight :weight bold :foreground ,default))))
    `(magit-whitespace-warning-face ((,class (:background ,red))))
+   `(magit-blame-header ((,class (:foreground ,green-3 :weight bold :box 1))))
 
 
    ;; diff
