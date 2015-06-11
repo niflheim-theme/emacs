@@ -1,6 +1,6 @@
 ;;; niflheim-theme.el --- A port of the Nifleim theme to Emacs
 
-;; Copyright (C) 2014  Nicolas Petton
+;; Copyright (C) 2014-2015  Nicolas Petton
 
 ;; Author: Nicolas Petton <petton.nicolas@gmail.com>, Benjamin Van Ryseghem <benjamin.vanryseghem@gmail.com>
 ;; Keywords: themes
@@ -43,7 +43,8 @@
       (orange-2 "#f7af75")
       (orange-dark "#da8548")
       (orange-darker "#bd6626")
-      (mode-line "#202020")
+      (mode-line "#262626")
+      (mode-line-border "#111111")
       (yellow-dark "#888833")
       (purple "#cbaaf5")
       (purple-light "#ddcaf6")
@@ -82,7 +83,7 @@
    `(hl-line ((,class (:background ,grey-dark :underline nil :inherit nil))))
 
    ;; Mode line faces
-   `(mode-line ((,class (:background ,mode-line :foreground ,light :box (:line-width 1 :color ,mode-line)))))
+   `(mode-line ((,class (:background ,mode-line :foreground ,light :box (:line-width 1 :color ,mode-line-border)))))
    `(mode-line-inactive ((,class (:background ,highlight :foreground ,grey-light :box (:line-width 1 :color ,highlight)))))
 
    ;; Org-clock mode line
@@ -239,9 +240,9 @@
 
    ;; mu4e
    `(mu4e-title-face ((,class (:foreground ,orange :weight bold))))
-   `(mu4e-unread-face ((,class (:foreground ,orange :weight bold))))
+   `(mu4e-unread-face ((,class (:foreground ,purple :weight bold))))
    `(mu4e-replied-face ((,class (:foreground ,blue))))
-   `(mu4e-highlight-face ((,class (:foreground ,purple :weight bold))))
+   `(mu4e-highlight-face ((,class (:foreground ,orange :weight bold))))
    `(mu4e-header-highlight-face ((,class (:foreground unspecified :background ,grey))))
 
    ;; flyspell
