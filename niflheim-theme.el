@@ -249,6 +249,11 @@
    `(flyspell-incorrect ((,class (:underline (:color ,red :style wave) :weight unspecified :foreground unspecified :inherit nil))))
    `(flyspell-duplicate ((,class (:underline (:color ,red :style wave) :weight unspecified :foreground unspecified :inherit nil))))
 
+   ;; flycheck
+   `(flycheck-fringe-error ((,class (:foreground ,light :background ,red :weight bold))))
+   `(flycheck-fringe-warning ((,class (:foreground ,light :background ,orange-dark :weight bold))))
+   `(flycheck-fringe-info ((,class (:foreground ,light :background ,blue-dark :weight bold))))
+
    ;; Gnus faces -- from wombat, feel free to improve :)
    `(gnus-group-news-1 ((,class (:weight bold :foreground "#95e454"))))
    `(gnus-group-news-1-low ((,class (:foreground "#95e454"))))
