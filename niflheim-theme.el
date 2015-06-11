@@ -240,7 +240,7 @@
 
    ;; mu4e
    `(mu4e-title-face ((,class (:foreground ,orange :weight bold))))
-   `(mu4e-unread-face ((,class (:foreground ,purple :weight bold))))
+   `(mu4e-unread-face ((,class (:foreground ,orange))))
    `(mu4e-replied-face ((,class (:foreground ,blue))))
    `(mu4e-highlight-face ((,class (:foreground ,orange :weight bold))))
    `(mu4e-header-highlight-face ((,class (:foreground unspecified :background ,grey))))
