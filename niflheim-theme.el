@@ -119,7 +119,7 @@
    `(font-lock-warning-face ((,class (:foreground ,red))))
 
    ;; linum
-   `(linum ((,class (:foreground ,grey :background ,background))))
+   `(linum ((,class (:foreground ,grey :background "#353535"))))
 
    ;; eshell
    `(eshell-prompt ((,class (:foreground ,orange :background ,background :weight bold))))
