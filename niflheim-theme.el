@@ -238,6 +238,15 @@
    `(message-cited-text ((,class (:foreground ,comment))))
    `(message-separator ((,class (:foreground ,red :weight bold))))
 
+   ;; notmuch
+
+   `(notmuch-message-summary-face ((,class (:background ,highlight :box (:line-width 2 :color ,background)))))
+   `(notmuch-crypto-part-header ((,class (:foreground ,blue))))
+   `(notmuch-crypto-decryption ((,class (:foreground ,purple))))
+   `(notmuch-crypto-signature-unknown ((,class (:foreground ,red))))
+   `(notmuch-crypto-signature-good ((,class (:background ,green-alt :foreground ,default :weight bold))))
+   `(notmuch-crypto-signature-bad ((,class (:background ,red :foreground ,background :weight bold))))
+
    ;; mu4e
    `(mu4e-title-face ((,class (:foreground ,orange :weight bold))))
    `(mu4e-unread-face ((,class (:foreground ,orange))))
