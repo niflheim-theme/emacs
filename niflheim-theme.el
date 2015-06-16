@@ -157,7 +157,12 @@
    `(header-line ((,class (:background ,dark :foreground ,default :box 1))))
    ;; compilation
    `(compilation-info ((,class (:foreground ,purple :weight bold))))
-   `(compilation-line-number ((,class (:foreground ,orange :weight bold))))
+   `(compilation-warning ((,class (:foreground ,orange :weight bold))))
+   `(compilation-error ((,class (:foreground ,red :weight bold))))
+   `(compilation-line-number ((,class (:foreground ,green :weight bold))))
+   `(compilation-mode-line-exit ((,class (:foreground ,green-alt :background ,default :weight bold :inverse-video t))))
+   `(compilation-mode-line-run ((,class (:foreground ,orange :weight bold :inverse-video t))))
+   `(compilation-mode-line-error ((,class (:foreground ,red :weight bold :inverse-video t))))
 
    ;; dired
    `(dired-header ((,class (:foreground ,orange :weight bold))))
