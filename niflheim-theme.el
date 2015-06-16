@@ -188,6 +188,8 @@
    `(diff-added ((,class (:foreground ,default :background ,green-dark))))
    `(diff-hunk-header ((,class (:background ,highlight :weight bold :foreground ,default))))
    `(diff-file-header ((,class (:background ,highlight :weight bold :foreground ,default))))
+   `(diff-refine-added ((,class (:foreground "#cccccc" :background ,green-alt))))
+   `(diff-refine-removed ((,class (:background ,red-alt :foreground "#cccccc"))))
 
    ;; ediff
    `(ediff-fine-diff-B ((,class (:foreground "#cccccc" :background ,green-alt))))
