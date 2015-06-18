@@ -43,13 +43,12 @@
       (orange-2 "#f7af75")
       (orange-dark "#da8548")
       (orange-darker "#bd6626")
-      (mode-line "#262626")
-      (mode-line-border "#111111")
+      (mode-line-inactive "#2a2a2a")
       (yellow-dark "#888833")
       (purple "#cbaaf5")
       (purple-light "#ddcaf6")
       (purple-dark "#7846b5")
-      (purple-darker "#5a2996")
+      (purple-darker "#544568")
       (blue "#7ac1ff")
       (blue-alt "#1268b4")
       (blue-light "#aaccff")
@@ -83,8 +82,14 @@
    `(hl-line ((,class (:background ,grey-dark :underline nil :inherit nil))))
 
    ;; Mode line faces
-   `(mode-line ((,class (:background ,mode-line :foreground ,light :box (:line-width 1 :color ,mode-line-border)))))
-   `(mode-line-inactive ((,class (:background ,highlight :foreground ,grey-light :box (:line-width 1 :color ,highlight)))))
+   `(mode-line ((,class (:background ,purple-darker :foreground ,light :box (:line-width 1 :color ,grey-light)))))
+   ;; `(mode-line ((,class (:background ,blue-dark :foreground ,light :box (:line-width 1 :color ,grey-light)))))
+   `(mode-line-inactive ((,class (:background ,mode-line-inactive :foreground ,grey-light :box (:line-width 1 :color ,grey-light)))))
+   `(header-line ((,class (:inherit mode-line-inactive))))
+
+   ;; mml
+   `(message-mml-face ((,class (:foreground ,orange-dark))))
+
 
    ;; Org-clock mode line
    `(org-mode-line-clock ((,class (:background unspecified (:inherit mode-line)))))
@@ -154,7 +159,7 @@
    `(link ((,class (:foreground ,blue :underline t))))
    `(link-visited ((,class (:foreground ,blue-light :underline t))))
    `(button ((,class (:background ,grey-darker :foreground ,light))))
-   `(header-line ((,class (:background ,dark :foreground ,default :box 1))))
+
    ;; compilation
    `(compilation-info ((,class (:foreground ,purple :weight bold))))
    `(compilation-warning ((,class (:foreground ,orange :weight bold))))
