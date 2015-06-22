@@ -130,7 +130,7 @@
                                               :inverse-video unspecified))))
    `(whitespace-trailing ((,class (:background unspecified :foreground ,highlight
                                                :inverse-video unspecified))))
-   `(whitespace-line ((,class (:background unspecified :foreground ,red
+   `(whitespace-line ((,class (:background unspecified :foreground unspecified
                                            :inverse-video unspecified))))
    `(whitespace-space-before-tab ((,class (:background unspecified :foreground ,highlight
                                                        :inverse-video t))))
