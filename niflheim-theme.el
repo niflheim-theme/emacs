@@ -128,7 +128,7 @@
                                           :inverse-video unspecified))))
    `(whitespace-newline ((,class (:background unspecified :foreground ,highlight
                                               :inverse-video unspecified))))
-   `(whitespace-trailing ((,class (:background ,red :foreground unspecified :weight bold
+   `(whitespace-trailing ((,class (:background ,red :foreground ,background :weight bold
                                                :inverse-video nil))))
    `(whitespace-line ((,class (:background unspecified :foreground unspecified
                                            :inverse-video unspecified))))
