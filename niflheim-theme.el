@@ -134,12 +134,12 @@
                                            :inverse-video unspecified))))
    `(whitespace-space-before-tab ((,class (:background unspecified :foreground ,highlight
                                                        :inverse-video t))))
+   `(whitespace-space-after-tab ((,class (:background unspecified :foreground ,highlight
+                                                       :inverse-video t))))
    `(whitespace-indentation ((,class (:background unspecified :foreground ,highlight
                                                   :inverse-video unspecified))))
    `(whitespace-empty ((,class (:background unspecified :foreground ,highlight
                                             :inverse-video unspecified))))
-   `(whitespace-space-after-tab ((,class (:background unspecified :foreground "#ff6c6b"
-                                                      :inverse-video t :weight bold))))
 
    ;; Button and link faces
    `(link ((,class (:foreground ,blue :underline t))))
