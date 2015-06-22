@@ -128,14 +128,12 @@
                                           :inverse-video unspecified))))
    `(whitespace-newline ((,class (:background unspecified :foreground ,highlight
                                               :inverse-video unspecified))))
-   `(whitespace-trailing ((,class (:background unspecified :foreground ,red :weight bold
-                                               :inverse-video t))))
+   `(whitespace-trailing ((,class (:background ,red :foreground unspecified :weight bold
+                                               :inverse-video nil))))
    `(whitespace-line ((,class (:background unspecified :foreground unspecified
                                            :inverse-video unspecified))))
-   `(whitespace-space-before-tab ((,class (:background unspecified :foreground ,highlight
-                                                       :inverse-video t))))
-   `(whitespace-space-after-tab ((,class (:background unspecified :foreground ,highlight
-                                                       :inverse-video t))))
+   `(whitespace-space-before-tab ((,class (:inherit whitespace-space))))
+   `(whitespace-space-after-tab ((,class (:inherit whitespace-space))))
    `(whitespace-indentation ((,class (:background unspecified :foreground ,highlight
                                                   :inverse-video unspecified))))
    `(whitespace-empty ((,class (:background unspecified :foreground ,highlight
