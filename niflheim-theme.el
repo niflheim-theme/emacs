@@ -304,6 +304,9 @@
    ;; web-mode
    `(web-mode-html-tag-face ((,class (:foreground ,purple :weight bold))))
 
+   ;; FIC
+   `(font-lock-fic-face ((,class (:foreground ,dark :background ,red :weight bold))))
+
    ;; which-function
    `(which-func ((,class (:foreground ,purple))))))
 
