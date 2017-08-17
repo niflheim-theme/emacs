@@ -3,6 +3,8 @@ Niflheim theme for emacs
 
 A Niflheim theme for [Emacs](https://www.gnu.org/software/emacs/).
 
+**This theme is not maintained anymore**.  I'm however actively maintaining [Zerodark](https://github.com/NicolasPetton/zerodark-theme), a theme inspired by Niflheim and other dark themes.
+
 ![Screenshot](screenshot.png)
 
 ## Installation (with MELPA)
